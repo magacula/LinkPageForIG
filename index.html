@@ -6,21 +6,11 @@
     <link rel="stylesheet" href="main.css" />
     <title>Koi's Link Page</title>
   </head>
-  <script>
-    var mobilevideo = document.getElementsByTagName("video")[0];
-    mobilevideo.setAttribute("playsinline", "");
-    mobilevideo.setAttribute("muted", "");
-  </script>
   <body>
     <section class="showcase">
       <div class="video-container">
-        <!--  poster - an image that will be shown whilst the video is loading-->
-        <video playsinline autoplay loop>
-          <source
-            type="video/mp4"
-            src="./img/bg-sunset.mp4"
-            poster="./img/bg.jp"
-          />
+        <video playsinline muted autoplay loop>
+          <source type="video/mp4" src="./img/bg-sunset.mp4" />
         </video>
       </div>
       <div class="content">
