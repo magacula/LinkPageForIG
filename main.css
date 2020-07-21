@@ -55,3 +55,8 @@ a {
     height: 100%;
   }
 }
+
+/* Hides all HTML video controls on mobile devices */
+video::-webkit-media-controls {
+  display: none !important;
+}
