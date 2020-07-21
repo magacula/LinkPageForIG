@@ -56,12 +56,7 @@ a {
   }
 }
 
-/* Hides all HTML video controls on mobile devices */
-video::-webkit-media-controls {
-  display: none !important;
-}
-
-*::-webkit-media-controls-start-playback-button {
-  display: none !important;
-  -webkit-appearance: none;
+/* Gets rid of play button for mobile devices */
+video::-webkit-media-controls-start-playback-button {
+  display: none;
 }
