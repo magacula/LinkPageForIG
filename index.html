@@ -9,8 +9,13 @@
   <body>
     <section class="showcase">
       <div class="video-container">
-        <video playsinline muted autoplay loop>
-          <source type="video/mp4" src="./img/bg-sunset.mp4" />
+        <!--  poster - an image that will be shown whilst the video is loading-->
+        <video autoplay loop muted webkit-playsinline>
+          <source
+            type="video/mp4"
+            poster="./img/bg.jpg"
+            src="./img/bg-sunset.mp4"
+          />
         </video>
       </div>
       <div class="content">
