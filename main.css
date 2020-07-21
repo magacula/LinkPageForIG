@@ -57,6 +57,6 @@ a {
 }
 
 /* Gets rid of play button for mobile devices */
-video::-webkit-media-controls-start-playback-button {
+.video-container video::-webkit-media-controls-start-playback-button {
   display: none;
 }
