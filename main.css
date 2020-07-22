@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,400;1,500&display=swap");
+
 :root {
   --primary-color: rgb(68, 101, 212);
 }
@@ -9,18 +11,13 @@
 }
 
 body {
-  font-family: ;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
   line-height: 1.5;
 }
 
 a {
   text-decoration: none;
   color: var(--primary-color);
-}
-
-h3 {
-  font-family: "Grenze Gotisch", cursive;
-  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .showcase {
@@ -53,9 +50,7 @@ h3 {
   margin-top: 80px;
   left: 15%;
   right: 15%;
-  font-size: 14px;
-  font-family: "Grenze Gotisch", cursive;
-  font-family: "IBM Plex Sans", sans-serif;
+  justify-content: center;
   font-family: "IBM Plex Sans Condensed", sans-serif;
 }
 
