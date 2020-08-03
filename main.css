@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@1,600&family=IBM+Plex+Sans:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@1,700&display=swap');
-
-
 
 * {
   box-sizing: border-box;
@@ -10,8 +7,7 @@
 }
 
 body {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-family: 'IBM Plex Sans Condensed', sans-serif
+  font-family: "IBM Plex Sans Condensed", sans-serif;
   line-height: 1.5;
 }
 
@@ -42,10 +38,8 @@ h3 {
   width: 100%;
   height: 100%;
   overflow: hidden; /* disables scroll bars */
-  background: var(--primary-color) url(./img/bg.jpg) no-repeat center
-    center/cover;
+  background: url(./img/bg.jpg) no-repeat center center/cover;
 }
-
 
 /* z-index specifies the stack order of elements. The higher the order, the higher the stack order
   The lower, the lower the stack priority
@@ -57,19 +51,31 @@ h3 {
 }
 
 .video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
-  position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
 }
 
+/* Inserts an element after the video element and styles it
+  (Creates a dark overlay over video) */
+.video-container:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
 .link-container {
-  margin-top: 60px;
   display: flex;
+  margin-top: 60px;
   flex-direction: column;
   z-index: 10;
 }
@@ -79,15 +85,18 @@ h3 {
   height: 3.5em;
   width: 95%;
   color: white;
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
   font-weight: 900;
   opacity: 0.7;
+}
+
+button:hover {
+  opacity: 1;
 }
 
 #btn1 {
   background: url(./img/bigvibn2.jpg);
   background-size: cover;
-
 }
 
 #btn2 {
@@ -100,10 +109,7 @@ h3 {
   background-size: 75px auto;
 }
 
-button:hover {
-  opacity: 1;
-}
-
+/* Media query that adjust video background size to fit screen sizes on mobile devices  */
 @media (max-width: 465px) {
   video {
     left: 0;
@@ -112,24 +118,4 @@ button:hover {
     width: 100%;
     height: 100%;
   }
-}
-
-
-video::-webkit-media-controls-panel {
-  display: none !important;
-  -webkit-appearance: none;
-}
-
-video::-webkit-media-controls {
-  display: none !important;
-}
-
-video::-webkit-media-controls-play-button {
-  display: none !important;
-  -webkit-appearance: none;
-}
-
-video::-webkit-media-controls-start-playback-button {
-  display: none !important;
-  -webkit-appearance: none;
 }
