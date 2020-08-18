@@ -92,6 +92,14 @@ h3 {
 
 button:hover {
   opacity: 1;
+  transform: scale(1.05);
+}
+
+.playlist {
+  font-style: normal;
+  display: inline-block;
+  font-size: 0.85rem;
+  text-indent: 10px;
 }
 
 #btn1 {
