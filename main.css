@@ -86,14 +86,15 @@ h3 {
   margin: 25px 5px;
   height: 3.5em;
   width: 95%;
-  color: white;
-  opacity: 0.7;
+  color: #ffffff;
   font-weight: 700;
+  border: none;
+  transition-duration: 0.3s;
 }
 
 button:hover {
-  opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.02);
+  color: #000000;
 }
 
 .playlist {
