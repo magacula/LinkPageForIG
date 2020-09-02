@@ -119,8 +119,8 @@ button:hover {
   background-size: 75px auto;
 }
 
-/* Media query that adjust video background size to fit screen sizes on mobile devices  */
-@media (max-width: 465px) {
+/* Media query that adjust video background size to fit screen sizes on mobile devices (Mobile-first approach) */
+@media (min-width: 400px) {
   video {
     left: 0;
     right: 0;
